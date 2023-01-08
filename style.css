@@ -1,0 +1,157 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+section{ /* for mobile */
+    margin: 25px;
+    max-width: 375px;
+    min-width: 325px ;
+}
+
+.section-1 {
+    z-index: -2;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    position: relative;
+}
+
+.container {
+    margin: 32px;
+}
+
+.profile {
+    border-radius: 100px;
+    outline: 3px solid rgba(255, 255, 255, 0.51);
+    margin-right: 20px;
+}
+
+.name {
+    color: white;
+}
+
+.status {
+    color: white;
+    opacity: 50%;
+}
+
+.bold-content p{
+    font-size: 23.8px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 0 10px;
+}
+
+.norm-content p{
+    font-size: 16.4px;
+    padding: 10px 0 35px;
+    color: white;
+    opacity: 50%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+   padding-top: 25px;
+}
+
+.bg-symbol img{
+    position: absolute;
+    z-index: -1;
+    opacity: 70%;
+    right: 16px;
+    width: 130px;
+}
+
+.section-2 {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+
+.section-3 {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bold-content-dark p{
+    font-size: 23.8px;
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+    padding: 20px 0 10px;
+}
+
+.norm-content-dark p{
+    font-size: 16.4px;
+    padding: 10px 0 35px;
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+
+.name-dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.status-dark {
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+
+.section-4 {
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+}
+
+.section-5 {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.section-4 .profile {
+    border-radius: 100px;
+    outline: 3px solid hsl(263, 55%, 52%);
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .body {
+        margin: 140px 120px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bg-symbol img {
+        top: 0;
+        right: 100px;
+    }
+
+    .header-container {
+        padding: 0;
+    }
+
+    .norm-content p, .norm-content-dark p {
+        padding: 10px 0 0;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    .section-1 {
+        grid-column: 1 / span 2;
+    }
+
+    .section-5 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .section-4 {
+        grid-column: 2 / span 2;
+    }
+}
