@@ -120,7 +120,7 @@ section{ /* for mobile */
 
 @media only screen and (min-width: 1440px) {
     .body {
-        margin: 140px 120px;
+        margin: 50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
